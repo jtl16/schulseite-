@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mittag</title>
+  <title>Startseite</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
   <link rel="stylesheet" href="stylesheet.css">
   <link rel="stylesheet" href="librarys/bootstrap.min.css" />
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
+  <style>
+  .nav {
+    width: 140px;
+  }
+  </style>
 </head>
 <body>
 
 <div class="container nopadding">
   <div class="col-xs-2 nopadding" >
   <!-- Icons -->
-  <img id="food2" src="img/food.png">
+  <img id="food" src="img/food.png">
   <img id="wichtig" src="img/wichtig.png"/>
 
       <div class="nav">
         <ul style="position: absolute;">
           <img src="img/logo.png" id="logo"/>
-          <li><a href="index.htm">Startseite</a></li>
+          <li class="selected"><a href="#">Startseite</a></li>
           <li><a href="termine.html">Termine Schuljahr</a></li>
           <li><a href="ab-wochenplan.html">A/B-Wochenplan</a></li>
           <li><a href="kursplan.html">Kursarbeitsplan</a></li>
@@ -37,13 +43,17 @@
           <li><a href="kontakt.html">Kontakt</a></li>
           <li><a href="formulare.html">Formulare</a></li>
             <br />
-          <li class="selected"><a href="mittag.html">Mittagessen</a></li>
+          <li><a href="mittag.html">Mittagessen</a></li>
         </ul>
       </div>
     </div>
-  <div class="mittag">
-    <iframe src="http://www.fleischerei-gemeinhardt.de/cms/leistungen/schulessen"></iframe>
+
+  <div class="col-xs-10 nopadding">
+    <div class="header">
+      <img src="img/header.png">
+    </div>
   </div>
+</div>
 
 <script type="text/javascript" src="librarys/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="scripte/jquery.js"></script>
